@@ -1,0 +1,96 @@
+/* ✅ 전체 영역 */
+#root {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+  text-align: center;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ✅ 제목 */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  color: #111827;
+}
+
+/* ✅ 입력창 + 버튼 */
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+button {
+  margin-left: 8px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* ✅ 목록 스타일 */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.2rem;
+  text-align: left;
+}
+
+/* ✅ 각 항목 */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+li label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+}
+
+/* ✅ 완료된 항목 표시 */
+li label input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* ✅ 삭제 버튼 */
+li button {
+  background-color: #ef4444;
+  font-size: 13px;
+  padding: 6px 10px;
+}
+
+li button:hover {
+  background-color: #dc2626;
+}
